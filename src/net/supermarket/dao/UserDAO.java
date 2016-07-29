@@ -21,9 +21,9 @@ public class UserDAO implements IUserDAO{
 		pstmt.setInt(5, pojo.getLast_login());
 		pstmt.setString(6, pojo.getLast_ip());
 		pstmt.setString(7, pojo.getAction_list());
-		pstmt.setShort(8, pojo.getRole_id());
+		pstmt.setInt(8, pojo.getRole_id());
 		int flag = pstmt.executeUpdate();
-		DbUtil.close(conn, pstmt, null);
+		DbUtil.close(conn, pstmt);
 		return flag > 0 ? true : false;
 	}
 

@@ -1,7 +1,7 @@
 package net.supermarket.model;
 
 public class User {
-	private short user_id;
+	private int user_id;
 	private String user_name;
 	private String email;
 	private String password;
@@ -9,13 +9,13 @@ public class User {
 	private int last_login;
 	private String last_ip;
 	private String action_list;
-	private short role_id;
+	private int role_id;
 
-	public short getUser_id() {
+	public int getUser_id() {
 		return user_id;
 	}
 
-	public void setUser_id(short user_id) {
+	public void setUser_id(int user_id) {
 		this.user_id = user_id;
 	}
 
@@ -75,11 +75,11 @@ public class User {
 		this.action_list = action_list;
 	}
 
-	public short getRole_id() {
+	public int getRole_id() {
 		return role_id;
 	}
 
-	public void setRole_id(short role_id) {
+	public void setRole_id(int role_id) {
 		this.role_id = role_id;
 	}
 
